@@ -1,0 +1,35 @@
+name: Sort Glossary
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+
+permissions:
+  contents: write   # nécessaire pour committer les changements
+
+jobs:
+  sort:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Run sorting script
+        run: |
+          python sort_glossary.py
+
+      - name: Commit changes (README + JSON)
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: auto-sort glossary & export JSON"
+          file_pattern: |
+            README.md
+            docs/glossary.json
+
+ci: add sort-glossary workflow
