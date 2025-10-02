@@ -2,7 +2,7 @@
 
 <!-- GLOSSARY:START -->
 | English Term       | French Equivalent        | Definition (EN)                                                   | Définition (FR)                                                  |
-|--------------------|--------------------------|-------------------------------------------------------------------|------------------------------------------------------------------|
+|----------------------|----------------------------|---------------------------------------------------------------|--------------------------------------------------------------|
 | Business Glossary  | Glossaire métier         | Shared dictionary of data terms and definitions across the org.   | Dictionnaire partagé des termes et définitions de données.       |
 | Data Architecture  | Architecture des données | Structural organization of data flows, systems, and models.       | Organisation structurelle des flux, systèmes et modèles de données. |
 | Data Catalog       | Catalogue de données     | Centralized inventory describing available datasets.               | Inventaire centralisé décrivant les jeux de données disponibles. |
